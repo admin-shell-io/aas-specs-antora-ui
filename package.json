@@ -58,5 +58,8 @@
     "stylelint": "~13.13",
     "stylelint-config-standard": "~22.0",
     "vinyl-fs": "~3.0"
+  },
+  "dependencies": {
+    "aas-specs-antora-ui": "file:"
   }
 }

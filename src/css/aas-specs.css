@@ -24,7 +24,7 @@
 
   /* Headers */
   #header > h1:first-child {
-    color: #3149cc;
+    color: #0028cd;
   }
 
   h1,
@@ -34,7 +34,7 @@
   h4,
   h5,
   h6 {
-    color: #3149cc;
+    color: #0028cd;
   }
 
   #content h1 > a.link:hover,
@@ -56,7 +56,7 @@
   h4 > a.link,
   h5 > a.link,
   h6 > a.link {
-    color: #3149cc;
+    color: #0028cd;
     text-decoration: none;
   }
 
@@ -79,7 +79,7 @@
   .ulist > .title,
   .qlist > .title,
   .hdlist > .title {
-    color: #3149cc;
+    color: #0028cd;
   }
 
   /* Tables */

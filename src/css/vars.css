@@ -122,7 +122,7 @@
   --footer-font-color: #000000;
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */
-  --navbar-height: calc(63 / var(--rem-base) * 1rem);
+  --navbar-height: calc(60 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);

@@ -261,16 +261,17 @@
 }
 
 .doc table.tableblock {
-  font-size: calc(15 / var(--rem-base) * 1rem);
+  font-size: calc(14 / var(--rem-base) * 1rem);
   margin-bottom: 2rem;
   width: 100%;
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
 }
 
 .doc table.tableblock th,
 .doc table.tableblock td {
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.75rem;
   border: 1px solid var(--table-border-color);
 }
 
@@ -279,6 +280,7 @@
   color: white;
   font-weight: 500;
   text-align: left;
+  padding: 0.5rem 0.75rem;
 }
 
 .doc table.tableblock thead tr th {
@@ -286,15 +288,13 @@
   color: white;
   border: 1px solid var(--table-border-color);
   border-bottom: 2px solid var(--table-border-color);
-}
-
-.doc table.tableblock tbody tr:nth-child(even) {
-  background-color: var(--table-stripe-background);
+  padding: 0.5rem 0.75rem;
 }
 
 .doc table.tableblock tbody tr td {
   border: 1px solid var(--table-border-color);
-  vertical-align: top;
+  vertical-align: middle;
+  padding: 0.4rem 0.75rem;
 }
 
 .doc table.tableblock {

@@ -1,8 +1,8 @@
 .doc {
   color: var(--doc-font-color);
-  font-size: var(--doc-font-size);
+  font-size: calc(14 / var(--rem-base) * 1rem);
   hyphens: auto;
-  line-height: var(--doc-line-height);
+  line-height: 1.4;
   margin: var(--doc-margin);
   max-width: var(--doc-max-width);
   padding: 0 2rem 4rem;
@@ -119,8 +119,9 @@
 }
 
 .doc p {
-  margin: 0 0 1rem;
-  line-height: 1.6;
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+  font-size: calc(14 / var(--rem-base) * 1rem);
 }
 
 .doc a {
@@ -405,7 +406,26 @@
 }
 
 .doc .admonitionblock {
-  margin: 1.4rem 0 0;
+  margin: 1rem 0;
+  font-size: calc(13 / var(--rem-base) * 1rem);
+  line-height: 1.4;
+}
+
+.doc .admonitionblock .title {
+  font-size: calc(13 / var(--rem-base) * 1rem);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--doc-font-color);
+}
+
+.doc .admonitionblock .content {
+  background: var(--admonition-background);
+  padding: 0.75rem;
+  line-height: 1.4;
+}
+
+.doc .admonitionblock.note .icon {
+  color: var(--note-color);
 }
 
 .doc .admonitionblock p,

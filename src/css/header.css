@@ -17,7 +17,9 @@ body {
   top: 0;
   width: 100%;
   z-index: var(--z-index-navbar);
-  
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .navbar a {
@@ -28,6 +30,7 @@ body {
   display: flex;
   flex: auto;
   padding-left: 1rem;
+  align-items: center;
 }
 
 .navbar-brand .navbar-item {
@@ -344,5 +347,117 @@ body {
 
   .navbar-dropdown a.navbar-item:hover {
     background: var(--navbar-menu_hover-background);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 0.5rem;
+  }
+
+  .navbar-brand {
+    padding-left: 0.5rem;
+  }
+
+  .navbar-brand .navbar-item:first-child {
+    font-size: calc(16 / var(--rem-base) * 1rem);
+  }
+
+  #search-input {
+    width: 120px;
+    font-size: 0.9rem;
+    padding: 0.3em 0.6em;
+  }
+
+  .navbar-menu {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    padding: 0 0.75rem;
+  }
+
+  .navbar-brand {
+    padding-left: 0.75rem;
+  }
+
+  .navbar-brand .navbar-item:first-child {
+    font-size: calc(17 / var(--rem-base) * 1rem);
+  }
+
+  #search-input {
+    width: 140px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand {
+    padding-left: 1rem;
+  }
+
+  #search-input {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+
+  .navbar-brand {
+    padding-left: 1.5rem;
+  }
+
+  #search-input {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar {
+    padding: 0 2rem;
+  }
+
+  .navbar-brand {
+    padding-left: 2rem;
+  }
+
+  #search-input {
+    width: 250px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  #search-input {
+    background: #2a2a2a;
+    border-color: #404040;
+    color: #e0e0e0;
+  }
+
+  #search-input:hover {
+    border-color: #505050;
+  }
+
+  #search-input:focus {
+    background: #333;
+    border-color: #666;
+  }
+
+  #search-input::placeholder {
+    color: #999;
+  }
+
+  #search-input:disabled {
+    background: #2a2a2a;
+    border-color: #404040;
   }
 }

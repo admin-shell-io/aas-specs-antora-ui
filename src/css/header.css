@@ -409,15 +409,42 @@ body {
 
 @media screen and (min-width: 1024px) and (max-width: 1399px) {
   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
-
   .navbar-brand {
+    flex: 0 1 auto;
+    min-width: 0;
     padding-left: 1.5rem;
   }
-
   #search-input {
-    width: 200px;
+    width: 160px;
+    min-width: 80px;
+    flex: 1 1 120px;
+    margin: 0 0.5rem;
+  }
+  .navbar-end {
+    display: flex;
+    flex: 0 1 auto;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .navbar-end > .navbar-item,
+  .navbar-end .navbar-link {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.95rem;
+    min-width: 80px;
+    box-sizing: border-box;
+  }
+  .navbar-menu {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 0.2rem;
+    margin-left: 0.5rem;
   }
 }
 

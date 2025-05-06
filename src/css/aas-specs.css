@@ -241,3 +241,16 @@
     padding: 0.5rem 0;
   }
 }
+
+/* Force table cells to wrap and not overflow */
+.doc table.tableblock th,
+.doc table.tableblock td {
+  white-space: normal;
+  word-break: break-word;
+  vertical-align: top;
+}
+
+/* Prevent table from expanding beyond its container */
+.doc table.tableblock {
+  table-layout: auto;
+}

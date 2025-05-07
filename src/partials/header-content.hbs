@@ -77,3 +77,50 @@
       </div>
   </nav>
 </header>
+
+<style>
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Ensures table doesn't get too squished */
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* Optional: Zebra striping for better readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive adjustments for laptops and smaller screens */
+@media (max-width: 1200px) {
+  th, td {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  table {
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  th, td {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  table {
+    min-width: 400px;
+  }
+}
+</style>
+
+

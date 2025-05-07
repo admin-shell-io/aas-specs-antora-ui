@@ -1132,20 +1132,3 @@
   text-align: right;
   width: 1.5em;
 }
-
-@media screen and (max-width: 900px) {
-  .doc table.tableblock {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    /* Optional: add a subtle shadow to indicate scrollability */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  }
-  .doc table.tableblock th,
-  .doc table.tableblock td {
-    min-width: 120px; /* Prevents columns from getting too narrow */
-    font-size: 14px;
-    padding: 6px 8px;
-  }
-}

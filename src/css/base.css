@@ -147,22 +147,3 @@ object[type="image/svg+xml"]:not([width]) {
     background-color: var(--scrollbar_hover-thumb-color);
   }
 }
-
-.doc table.tableblock::after {
-  content: "Scroll →";
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  color: #888;
-  font-size: 12px;
-  pointer-events: none;
-  display: none;
-}
-@media screen and (max-width: 900px) {
-  .doc table.tableblock {
-    position: relative;
-  }
-  .doc table.tableblock::after {
-    display: block;
-  }
-}

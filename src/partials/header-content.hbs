@@ -12,14 +12,15 @@
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end" style="margin-right: 50px;">
         {{#if env.SITE_SEARCH_PROVIDER}}
-	<div class="navbar-item search hide-for-print">
-	  <div id="search-field" class="field has-filter">
+	<div class="navbar-item search hide-for-print" style="margin-right: 30px;">
+	  <div id="search-field" class="field has-filter" style="display: flex; align-items: center; gap: 15px;">
 	    <input id="search-input" type="text" placeholder="Search Docs"{{#if page.home}} autofocus{{/if}}
-	           style="border: 2px solid #0028CD; border-radius: 25px; padding: 8px 15px; outline: none; font-size: 14px; width: 250px; transition: box-shadow 0.3s ease; background-color: white;"
+	           style="border: 2px solid #0028CD; border-radius: 25px; padding: 10px 20px; outline: none; font-size: 14px; width: 280px; transition: box-shadow 0.3s ease; background-color: white; height: 40px;"
 	           onfocus="this.style.boxShadow='0 0 8px rgba(0, 40, 205, 0.3)';"
 	           onblur="this.style.boxShadow='none';">
-	    <label class="filter checkbox" style="margin-left: 10px; color: #0028CD; font-size: 14px;">
-	      <input type="checkbox" data-facet-filter="component:{{page.component.name}}" style="margin-right: 5px;"> In this doc
+	    <label class="filter checkbox" style="display: flex; align-items: center; gap: 8px; color: #333; font-size: 14px; font-weight: 500; white-space: nowrap; cursor: pointer;">
+	      <input type="checkbox" data-facet-filter="component:{{page.component.name}}" style="width: 16px; height: 16px; accent-color: #0028CD; cursor: pointer;">
+	      <span>In this doc</span>
 	    </label>
 	  </div>
 	</div>

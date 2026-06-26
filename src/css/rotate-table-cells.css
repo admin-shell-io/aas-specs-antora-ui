@@ -1,0 +1,24 @@
+/*
+ * Generic CSS rule to rotate any table cell (header or data)
+ * that has the 'rotate' role.
+ */
+.tableblock table th.rotate,
+.tableblock table td.rotate {
+    /* Prevent text from wrapping */
+    white-space: nowrap;
+
+    /* Rotate the entire cell */
+    transform: rotate(-90deg);
+
+    /* Adjust position for readability */
+    vertical-align: bottom;
+    padding-bottom: 10px; /* Adds space between text and bottom border */
+    text-align: left; /* Aligns text with the "bottom" (now left) edge */
+
+    /* It's good practice to set a height on the row */
+    /* This can be done with a role on the <tr> or a more complex selector */
+    /* For now, this will rely on the content to push the row height */
+}
+
+/*
+/* Example for usage:  |=== | cell content not rotated | [.rotate] | cell content rotated |===
